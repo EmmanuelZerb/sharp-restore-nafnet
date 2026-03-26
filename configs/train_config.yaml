@@ -1,0 +1,36 @@
+# ===========================================
+# Configuration d'entrainement NAFNet
+# ===========================================
+
+# Model
+model: nafnet64  # nafnet32, nafnet64, nafnet_deblur
+
+# Data
+data:
+  train_blur: ./data/processed/train/blur
+  train_sharp: ./data/processed/train/sharp
+  val_blur: ./data/processed/val/blur
+  val_sharp: ./data/processed/val/sharp
+  patch_size: 256
+  num_workers: 4
+
+# Training
+training:
+  epochs: 200
+  batch_size: 8
+  learning_rate: 0.001
+  lr_min: 0.000001
+  weight_decay: 0.0
+
+# Loss weights
+loss:
+  l1_weight: 1.0
+  ssim_weight: 0.1
+  perceptual_weight: 0.05
+
+# Output
+output_dir: ./output
+save_every: 10
+
+# Seed
+seed: 42

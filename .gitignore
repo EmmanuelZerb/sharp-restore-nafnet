@@ -1,0 +1,17 @@
+# Data
+data/
+*.zip
+
+# Output
+output/
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
