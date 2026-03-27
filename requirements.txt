@@ -12,3 +12,6 @@ lpips>=0.1.4
 gdown>=4.7.0
 albumentations>=1.3.0
 PyYAML>=6.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6

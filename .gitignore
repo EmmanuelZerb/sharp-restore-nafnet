@@ -4,6 +4,9 @@ data/
 
 # Output
 output/
+uploads/
+outputs/
+weights/
 *.pth
 *.pt
 
@@ -15,3 +18,4 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+nul
